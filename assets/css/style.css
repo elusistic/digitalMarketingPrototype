@@ -1,0 +1,365 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'DM sans', serif;
+}
+
+header {
+    background-color: #1a1919;
+    color: #fff;
+}
+
+marquee {
+    font-family: 'Arimo', sans-serif;
+    text-transform: capitalize;
+}
+
+.topNavBar {
+    margin-top: 1rem;
+    width: 98vw;
+    margin-left: auto;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: capitalize;
+    font-size: xx-large;
+    align-items: center;
+}
+
+.logoText {
+    margin-left: 1rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.lt-2 {
+    color: #16cfd7;
+}
+
+#circle {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    background-color: #16cfd7;
+}
+
+.logo:hover>#circle {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.navItems {
+    display: inline-flex;
+    float: right;
+    align-items: center;
+    text-transform: capitalize;
+    margin-right: 2.3rem;
+    font-size: 1.14rem;
+    font-weight: bold;
+    font-family: 'DM Sans', serif;
+    align-items: center;
+    transition: transform, 0.2s;
+}
+
+#navItem-1:hover,
+#navItem-2:hover,
+#navItem-3:hover,
+#navItem-4:hover,
+#navItem-5:hover {
+    transform: translate(0, -.4rem);
+}
+
+.navItems>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navItems>a:hover {
+    color: #16cfd7;
+}
+
+#contactBtn {
+    background-color: #16cfd7;
+    border: solid #16cfd7;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: bold;
+    font-size: .9rem;
+    font-family: 'DM Sans', serif;
+    padding: .6rem 1.2rem;
+    border-radius: .27rem;
+}
+
+#contactBtn:hover {
+    border: solid #10888c;
+    background-color: #10888c;
+    color: #fff;
+}
+
+
+.heroSectionCont {
+    display: flex;
+    height: 87vh;
+    align-items: center;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroLeft {
+    padding: 3rem 0 0 1rem;
+
+}
+
+.heroLeft>h2 {
+    font-family: 'DM Sans', serif;
+    text-transform: capitalize;
+}
+
+.heroRight>img {
+    background-color: #fff;
+    height: 25rem;
+    margin-left: 11.5rem;
+    margin-top: -8vh;
+}
+
+.imgBg {
+    height: 25rem;
+    width: 400px;
+    border: 2px solid #fff;
+    margin-top: -68vh;
+    margin-left: 20vw;
+}
+
+#learnMore {
+    background-color: #16cfd7;
+    border: solid #16cfd7;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: bold;
+    font-size: .9rem;
+    font-family: 'DM Sans', serif;
+    padding: .6rem 2.2rem;
+    border-radius: .27rem;
+    margin-top: 8rem;
+    transition: 0.4s;
+}
+
+#learnMore:hover {
+    padding: .6rem 2.7rem;
+    border: solid #000;
+    background-color: #000;
+    color: #16cfd7;
+}
+
+
+.typeWriter h1 {
+    font-family: 'Arimo', sans-serif;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #141414;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    /* Adjust as needed */
+    animation:
+        typing 1.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #141414;
+    }
+}
+
+.sectionTwo {
+    font-family: 'DM Sans', serif;
+    text-align: center;
+    height: 100vh;
+}
+
+.sectionTwo>h1 {
+    padding-top: 12vh;
+    color: #a4a4a4;
+    font-weight: 100;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+}
+
+.sectionTwo>h2 {
+    font-family: 'Ramabhadra';
+    font-weight: 100;
+    margin-top: 3vh;
+}
+
+.sectionTwo>p {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionThree {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stLeft,
+.stRight {
+    width: 50%;
+}
+
+.stLeft {
+    font-family: 'DM Sans', serif;
+    font-size: 2rem;
+    width: 50%;
+}
+
+.stLeft>h1 {
+    font-weight: 100;
+    width: 80%;
+    padding-top: 2rem;
+    padding-left: 3rem;
+
+}
+
+.stLeft>img {
+    padding-left: 15rem;
+    padding-top: 2rem;
+}
+
+
+.stRight>h4 {
+    font-weight: 300;
+    width: 80%;
+    padding-top: 2rem;
+    font-family: 'Dm Sans', serif;
+    width: 80%;
+    font-size: 1.8rem;
+}
+
+.stRight>img {
+    padding-left: -1rem;
+    padding-top: 5rem;
+}
+
+
+.sectionThreeimg {
+    height: 25rem;
+}
+
+
+.contactQuestion {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cqLeft,
+.cqRight {
+    width: 40%;
+}
+
+.cqLeft>h1 {
+    font-size: 7rem;
+    font-weight: 100;
+}
+
+.cqRight {
+    font-size: 2rem;
+    padding-top: 10rem;
+}
+
+.bgHider {
+    background-color: #1a1919;
+    color: #1a1919;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.queryLinks {
+    list-style-type: none;
+    display: flex;
+}
+
+.queryLinks>li {
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.queryLinks>li:hover {
+    color: #16cfd7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+#activeItem {
+    color: #16cfd7;
+
+}
